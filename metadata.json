@@ -1,0 +1,6 @@
+{
+  "name": "ResQMesh",
+  "description": "Autonomous Self-Healing Cloud Infrastructure — Intelligent reliability layer for cloud-native applications with real telemetry, cascade failure detection, AI root-cause analysis, and policy-governed remediation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
