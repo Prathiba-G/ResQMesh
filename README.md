@@ -85,22 +85,7 @@ ResQMesh includes a dedicated Chaos Engineering console capable of injecting phy
 
 ---
 
-## 6. The 3-Minute Hackathon Judge Walkthrough
-
-1. **Start System**: Open ResQMesh in browser. All 5 microservices show green (`HEALTHY`, Reliability Score: ~99%).
-2. **Click [RUN FULL INCIDENT DEMO]**:
-   * **Phase 1**: Cluster establishes clean baseline state.
-   * **Phase 2**: Controlled chaos injects High Latency into `Payment Service`.
-   * **Phase 3**: Order Service thread workers become backlogged; queue depth spikes; Cascade Risk surges to **91%**.
-   * **Phase 4**: ResQMesh invokes **Gemini 3.8 Flash** to compute grounded RCA. The card explains *why* the failure happened and *why* restarting worker pods is the optimal mitigation.
-   * **Phase 5**: SRE Policy Engine checks `SRE-POL-00: Authorized Autonomous Self-Healing Rule` and marks the plan **APPROVED**.
-   * **Phase 6**: Execution engine restarts Payment Service and drains worker sockets.
-   * **Phase 7**: Recovery verification confirms latency has normalized to sub-40ms and generates a **Before vs. After** scorecard.
-3. **Click [Trace Request]**: Observe real-time hop-by-hop latency waterfall across the cluster.
-
----
-
-## 7. Running Locally & Testing
+## 6. Running Locally & Testing
 
 ### Development
 ```bash
